@@ -1,0 +1,24 @@
+{
+  "name": "911",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts",
+    "test": "tsc && ava *-test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.5.2",
+    "ava": "^0.24.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "pg": "^7.4.1",
+    "ts-node": "^4.1.0"
+  }
+}
