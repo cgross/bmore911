@@ -6,13 +6,13 @@ B'more 911 is a single page app that shows the last 18 months (or so) of 911 cal
 
 * Sorting (click on column headers)
 * Filtering (using the LIKE operator so its doing a table scan and therefore its a bit slow)
-* Map & table are kepts in sync.  Clicking on a marker will scroll to and highlight the associated row.  Clicking on a row with pan to and highlight the associated marker.
+* Map & table are kepts in sync.  Clicking on a marker will scroll to and highlight the associated row.  Clicking on a row will pan to and highlight the associated marker.
 
 ### Platforms & Frameworks
 
 * Database: Postgres on Amazon RDS
 * Server:  Node, Express, Typescript, Yarn
-* Client: React, Yarn
+* Client: React, Create-React-App, Yarn
 
 ### Configuration
 
@@ -21,7 +21,7 @@ Before running the app, you'll need a `config.json` in the root that specifies t
 ### Prerequisites
 
 Running, building, and testing all require both Node and Yarn be installed.  After cloning the repo,
-you'll need to run `yarn` (no parameters) inside both the project root and client directories.
+you'll need to run `yarn` (no parameters) inside both the project root and client directories to download dependencies.
 
 ### Development Mode
 
