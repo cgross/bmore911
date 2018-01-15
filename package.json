@@ -1,12 +1,13 @@
 {
-  "name": "911",
+  "name": "Bmore911",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "npm run build:live",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts",
-    "test": "tsc && ava *-test.js"
+    "test": "npm run build && ava *-test.js",
+    "build": "tsc && cd client && npm run build && cd .."
   },
   "author": "",
   "license": "ISC",

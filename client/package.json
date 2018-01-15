@@ -1,0 +1,23 @@
+{
+  "name": "Bmore911Client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bootstrap": "^3.3.7",
+    "google-map-react": "^0.27.0",
+    "lodash": "^4.17.4",
+    "react": "^15.6.2",
+    "react-data-grid": "^3.0.3",
+    "react-dom": "^15.6.2",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "copy": "cp -r build/. ../public",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001"
+}

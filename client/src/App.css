@@ -1,0 +1,78 @@
+.App {
+}
+
+.bmore-grid-wrapper {
+  position: absolute;
+  top:33%;
+  height:66%;
+  width:100%
+}
+
+.bmore-map-wrapper {
+  position: absolute;
+  top:0;
+  height:33%;
+  width:100%;
+}
+
+.loader {
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  background-color: #ddd;
+  z-index: 1000;
+}
+.loader:before{
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 4px;
+  background-color: #3507c3;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    from {left: -200px; width: 30%;}
+    50% {width: 30%;}
+    70% {width: 70%;}
+    80% { left: 50%;}
+    95% {left: 120%;}
+    to {left: 100%;}
+}
+
+.nabisco {
+  z-index: 1000;
+  position: fixed;
+  background: white;
+  width: 180px;
+  height: 180px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 113px;
+  transform: rotate(-45deg);
+  top: -90px;
+  left: -90px;
+  padding-left: 7px;
+  background-color: #3507c3;
+  color: white;
+}
+
+.nabisco > .phone {
+  height: 28px;
+  width: 28px;  
+}
+
+.nabisco > .phone > svg {
+  fill:white; 
+}
+
+.nabisco > .name {
+  font-weight: 700;
+}
+
+.nabisco > .number {
+  font-weight: 200;
+}

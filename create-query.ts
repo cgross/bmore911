@@ -33,7 +33,7 @@ export default function createQuery(params:{[key:string]:string}):{text:string,v
         }
     }
 
-    queryConfig.text += 'LIMIT 1000'
+    queryConfig.text += 'LIMIT 500'
 
     return queryConfig
 }

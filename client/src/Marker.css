@@ -1,0 +1,20 @@
+
+.marker  {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -4px;
+    top: -4px;
+    border: 3px solid white;
+    border-radius: 8px;
+    background: #ff1818;
+    box-shadow: 0px 0px 1px 1px grey;
+    cursor:pointer;
+}
+
+.marker.selected {
+    border-color: #2020fd;
+    background: #ffffff;
+    z-index: 1000;
+    box-shadow: 0px 0px 1px 1px grey;
+}
