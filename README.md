@@ -7,6 +7,7 @@ B'more 911 is a single page app that shows the last 18 months (or so) of 911 cal
 * Sorting (click on column headers)
 * Filtering (using the LIKE operator so its doing a table scan and therefore its a bit slow)
 * Map & table are kepts in sync.  Clicking on a marker will scroll to and highlight the associated row.  Clicking on a row will pan to and highlight the associated marker.
+* Data retrieved is limit to the first 500 records of any query.
 
 ### Platforms & Frameworks
 
