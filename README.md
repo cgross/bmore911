@@ -12,7 +12,9 @@ B'more 911 is a single page app that shows the last 18 months (or so) of 911 cal
 ### Platforms & Frameworks
 
 * Database: Postgres on Amazon RDS
-* Server:  Node, Express, Typescript, Yarn
+* Server:  
+  * Javascript Backend Implementation: Node, Express, Typescript, Yarn
+  * Java Backend Implementation: Java 8, SparkJava, JOOQ, Maven
 * Client: React, Create-React-App, Yarn
 
 ### Configuration
@@ -46,6 +48,13 @@ Then go to [http://localhost:3001](http://localhost:3001).
 To run backend tests, in the project root run `yarn test`.  To run client tests, in the client directory also run `yarn test`.
 
 
+# Alternative Java Backend Implementation
+
+There is an another backend implementation in Java.  It uses Java 8, SparkJava, JOOQ, and Maven.
+
+To run the Java backend, from the `java` directory, just do: `mvn compile exec:java`.
+
+The Node and Java backend use the same ports so don't run them simultaneously.
 
 
 
