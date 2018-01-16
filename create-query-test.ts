@@ -112,15 +112,14 @@ test('createQuery order by with where clause', t => {
 
 test('createQuery with datetime col in where', t => {
 	
-		var params = {
-			calldatetime2:'BLAH',
-		};
-		var queryConfig = {
-			text:'SELECT * FROM calls WHERE calldatetime2 >= $1 LIMIT 500',
-			values:['to_timestamp(\'BLAH\', \'YYYY-MM-DD HH24:MI:SS\')::timestamp without time zone']
-		};
-		
-		t.deepEqual(createQuery(params),queryConfig)	
+	var params = {
+		calldatetime2:'BLAH',
+	};
+	var queryConfig = {
+		text:'SELECT * FROM calls WHERE calldatetime2 >= $1 LIMIT 500',
+		values:['to_timestamp(\'BLAH\', \'YYYY-MM-DD HH24:MI:SS\')::timestamp without time zone']
+	};
 	
-	})
-	
+	t.deepEqual(createQuery(params),queryConfig)	
+
+})
